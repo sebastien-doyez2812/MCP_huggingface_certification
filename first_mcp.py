@@ -7,7 +7,7 @@ mcp = FastMCP("Weather Service")
 def get_weather(location: str)-> str:
     return f"Weather in {location}, Sunny, 32°C"
 
-@mcp.ressource("weather://{location}")
+@mcp.resource("weather://{location}")
 def weather_ressource(location: str) -> str:
     return f"Weather in {location}, Sunny, 32°C"
 
